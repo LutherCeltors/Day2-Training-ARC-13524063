@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" class="rel">
+    <title>Online Store</title>
+</head>
+<body>
+    <header>
+        <div id="menu-container">
+            <nav class="Menu">
+                <ul>
+                    <li>Notifikasi</li>
+                    <li>Costumer Care</li>
+                    <li>Akun</li>
+                    <li>Setelan</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="user-container">
+            <div class="grid-3">
+                <div class="position-left">
+                    <img src="./images/Centure.png" alt="">
+                </div>
+                <div class="search-bar">
+                    <form action="">
+                        <div>
+                            <input type="text" placeholder="Search Here" name="Search-Bar">
+                        </div>
+                    </form>
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/><a href="#Search"></a></svg>
+                </div>
+
+                <div class="position-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm-10.563-5l-2.937-7h16.812l-1.977 7h-11.898zm11.233-5h-11.162l1.259 3h9.056l.847-3zm5.635-5l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <main id="product-continer">
+            <section class="produk" id="produk-container">
+                <!-- Tempat produk dimuat -->
+            </section>
+            <section class="keranjangl" id="keranjang-container" style="display: none;">
+                <!-- Keranjang belanja akan ditampilkan di sini -->
+                <h1>Keranjang Belanja</h1>
+                <table id="keranjang-table">
+                    <thead>
+                        <tr>
+                        <th>Gambar</th>
+                        <th>Nama Produk</th>
+                        <th>Harga</th>
+                        <th>Jumlah</th>
+                        <th>Rating</th>
+                        <th>Total Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Keranjang Belanja akan ditampilkan di sini -->
+                    </tbody>
+                </table>
+                <h3>Total Semua Harga: <span id="total-semua-harga"></span></h3>
+            </section>
+        </main>   
+    </header>
+    
+</body>
+</html>
