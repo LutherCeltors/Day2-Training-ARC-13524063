@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing : border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/* Grid 3 */
+.grid-3 {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    justify-items: center;
+    align-items: center;
+}
+/* Menu Section */
+#menu-container {
+    width: 1200px;
+    height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    #main-container{
+        width: 100%;
+    }  
+}
+
+nav ul {
+    background-color: rgb(243, 241, 241);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 3rem;
+}
+nav ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+nav ul li:hover{
+    background-color: rgb(228, 201, 165);
+}
+
+/* User Container */
+#user-container{
+    background-color: gainsboro;
+    padding: 0px 60px;
+}
+
+#user-container .grid-3 .position-left img{
+    height: 80px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search-bar form{
+    width: 100%;
+    height: auto;
+}
+
+.search-bar input[type=text]{
+    border: none;
+    width: 400px;
+    padding : 6px;
+}
+
+.search-bar svg{
+    width: 100%;
+    height: auto;   
+    background-color: antiquewhite; 
+    padding-left: 5px;
+    padding-top: 1.5px;
+    padding-bottom: 2.3px;
+    border-radius: 2px;
+}
+.search-bar svg:hover{
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+    background-color: rgb(255, 213, 158);
+}
+
+#user-container .grid-3 .position-right svg{
+    height: 80px;
+    width: auto;
+    padding: 6px;
+    margin: 2px;
+}
+
+#user-container .grid-3 .position-right svg:hover{
+    border: solid 3px rgb(244, 244, 244);
+    border-radius: 10px;
+}
+
